@@ -13,6 +13,11 @@ Screenshots
 ![](http://i.imgur.com/l0uZGXX.png)
 
 
+TODO
+-------------
+1. Add Unit Test
+2. Create a Swift version
+
 How To Use It
 -------------
 

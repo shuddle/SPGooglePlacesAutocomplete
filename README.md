@@ -1,7 +1,11 @@
 SPGooglePlacesAutocomplete
 ===============
 
-SPGooglePlacesAutocomplete is a simple objective-c wrapper around the [Google Places Autocomplete API](https://developers.google.com/places/documentation/autocomplete). The API can be used to provide autocomplete functionality for text-based geographic searches, by returning Places such as businesses, addresses, and points of interest as a user types. SPGooglePlacesAutocomplete also provides support for converting Place results into CLPlacemark objects for easy mapping with MKMapView.
+SPGooglePlacesAutocomplete is a simple objective-c wrapper around the [Google Places Autocomplete API](https://developers.google.com/places/documentation/autocomplete). 
+
+The API can be used to provide autocomplete functionality for text-based geographic searches, by returning Places such as businesses, addresses, and points of interest as a user types. 
+
+SPGooglePlacesAutocomplete also provides support for converting Place results into CLPlacemark objects for easy mapping with MKMapView.
 
 Screenshots
 ----
@@ -16,8 +20,10 @@ How To Use It
 SPGooglePlacesAutocomplete requires a deployment target >= iOS 6.0 and ARC.
 
 ### Installation
-1. Create a new group in your project
-2. Drag all the files from <clone directory>/SPGooglePlacesAutocomplete into this group
+[CocoaPods](http://cocoapods.org) is the recommended way to add SPGooglePlacesAutocomplete to your project.
+
+1. Add a pod entry `pod 'SPGooglePlacesAutocomplete'` to to your Podfile.
+2. Run `pod install` or `pod update`.
 3. Include SPGooglePlacesAutocomplete wherever you need it with `#import "SPGooglePlacesAutocomplete.h"`.
 
 

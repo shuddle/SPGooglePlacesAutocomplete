@@ -34,7 +34,12 @@
 /*!
  Contains a unique stable identifier denoting this place. This identifier may not be used to retrieve information about this place, but can be used to consolidate data about this Place, and to verify the identity of a Place across separate searches.
  */
-@property (nonatomic, strong, readonly) NSString *identifier;
+@property (nonatomic, strong, readonly) NSString *identifier __attribute__((deprecated));
+
+/*!
+ Contains a textual identifier that uniquely identifies a place. To retrieve information about the place, pass this identifier in the placeId field of a Google Places API Web Service request
+ */
+@property (nonatomic, strong, readonly) NSString *placeIdentifier;
 
 /*!
  Your application's API key. This key identifies your application for purposes of quota management. Visit the APIs Console to select an API Project and obtain your key. Maps API for Business customers must use the API project created for them as part of their Places for Business purchase. Defaults to kGoogleAPIKey.

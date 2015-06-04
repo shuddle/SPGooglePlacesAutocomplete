@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *reference;
 @property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSString *placeIdentifier;
 @property (nonatomic) SPGooglePlacesAutocompletePlaceType type;
 @end
 
@@ -24,6 +25,7 @@
     place.name = placeDictionary[@"description"];
     place.reference = placeDictionary[@"reference"];
     place.identifier = placeDictionary[@"id"];
+    place.placeIdentifier = placeDictionary[@"place_id"];
     place.type = SPPlaceTypeFromDictionary(placeDictionary);
     place.key = apiKey;
     return place;
